@@ -108,7 +108,7 @@ _install_os_packages:
 	# Installing openssl-devel alone seems to result in SSL errors in pip (see https://medium.com/@moreless/pip-complains-there-is-no-ssl-support-in-python-edbdce548852)
 	# Need to install OpenSSL also to avoid these errors
 	wget https://github.com/openssl/openssl/archive/OpenSSL_1_0_2l.tar.gz
-	tar -zxvf OpenSSL_1_0_2l.tar.gz 
+	tar -zxf OpenSSL_1_0_2l.tar.gz
 	cd openssl-OpenSSL_1_0_2l/
 	./config shared
 	make
